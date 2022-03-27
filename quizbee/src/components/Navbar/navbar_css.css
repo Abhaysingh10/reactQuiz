@@ -1,0 +1,100 @@
+
+
+
+.main-navbar {
+  background-color: rgba(146, 145, 145, 0);
+}
+
+.navbar-brand{
+
+    margin-left: 20px;
+}
+.logo-image {
+  margin-top: 0%;
+  height: 60px;
+  width: 70px;
+  animation: move-box 0.8s;
+}
+
+.title-heading {
+
+  
+  font-family: "Poppins", sans-serif;
+  color: rgb(134, 134, 134);
+  font-size: x-large;
+  background-color: rgba(58, 126, 86, 0);
+  margin-left: 10rem;
+}
+
+.title-heading-child{
+    margin-top: 10px;
+    display: block;
+    text-align: center;
+}
+
+.nav-side {
+  margin-bottom: 0px;
+  margin-left: auto;
+  margin-right: 20px;
+  background-color: rgba(255, 255, 0, 0);
+  animation: fadein 2s ease-in;
+}
+
+.nav-side-heading {
+  background-color: rgba(255, 192, 203, 0);
+  margin-left: 8px;
+  margin-right: 8px;
+  font-family: "Poppins";
+  color: rgb(134, 134, 134);
+}
+
+@media screen and (max-width: 750px) {
+
+
+    @keyframes move-box {
+        0% {
+          left: 35%;
+          opacity: 0;
+        }
+        100% {
+        }
+      }
+
+      
+  @keyframes fadein {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  @keyframes fadeout {
+    0% {opacity: 100;}
+            100% {opacity: 0;}
+  }
+
+  .navbar-brand {
+    position: unset;
+    background-color: rgba(102, 51, 153, 0);
+    display: block;
+    animation: fadein 1s ease-out;
+    margin-left: 45%;
+  }
+  .logo-image {
+    margin-top: 0%;
+    height: 60px;
+    width: 70px;
+    margin-left: 0px;
+  }
+  
+  .nav-side {
+    display: none;
+  }
+
+  .title-heading {
+    display: none;
+    background-color: rgba(255, 255, 255, 0);
+  }
+}

@@ -11,14 +11,16 @@ const MenuCard = ({ menuData }) => {
         <>
 
             {menuData.map((currentElement) => {
-                return <Col md={6} key = {currentElement.id}>
+
+    const{ id, name, catergory, image , description, phone} = currentElement;
+                return <Col md={6} key = {id}>
                 <Card className='sm-3'>
                     <Card.Img variant='top' src={flower2} />
                     <Card.Body>
-                        <Card.Title> <h1>{currentElement.id}.{currentElement.name}</h1> </Card.Title>
-                        <Card.Title>{currentElement.phone}</Card.Title>
+                        <Card.Title> <h1>{id}.{name}</h1> </Card.Title>
+                        <Card.Title>{phone}</Card.Title>
                         <Card.Text>
-                            <p> {currentElement.description}</p>
+                            <p> {description}</p>
                         </Card.Text>
                     </Card.Body>
                 </Card>

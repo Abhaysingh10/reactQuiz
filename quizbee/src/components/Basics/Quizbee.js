@@ -1,10 +1,8 @@
-import React, { Component } from 'react'
-import { Container, Nav, NavDropdown } from 'react-bootstrap'
-const Navbar = props => {
-
+import React from "react"
+import { Navbar , Container, Nav, NavDropdown} from "react-bootstrap"
+const Quizbee  = () => {
     return (
-        <>
-
+        
             <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
                 <Container>
                     <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
@@ -30,9 +28,8 @@ const Navbar = props => {
                     </Navbar.Collapse>
                 </Container>
             </Navbar>
-        </>
+        
     )
-
 }
 
-export default Navbar
+export default Quizbee
