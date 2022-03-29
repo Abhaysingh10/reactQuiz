@@ -1,24 +1,29 @@
 
 
-
+.parent{
+  background-color: rgba(255, 0, 0, 0);
+}
 .main-navbar {
-  background-color: rgba(146, 145, 145, 0);
+  
+  height: 4rem;
+  background-color: rgba(109, 228, 168, 0);
+  box-shadow: .5px .5px 10px #9e9e9e88;
 }
 
 .navbar-brand{
-
     margin-left: 20px;
+    background-color: rgba(102, 51, 153, 0);
+    
 }
+
 .logo-image {
-  margin-top: 0%;
-  height: 60px;
-  width: 70px;
+  
+  height: 40px;
+  width: 40px;
   animation: move-box 0.8s;
 }
 
 .title-heading {
-
-  
   font-family: "Poppins", sans-serif;
   color: rgb(134, 134, 134);
   font-size: x-large;

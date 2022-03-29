@@ -1,18 +1,23 @@
 
 .body-parent{
   display: flex;
-  margin-bottom: 20px;
+  margin-bottom: 0rem;
+}
+
+.sidebar{
+  margin-top: 30px;
 }
 
 .empty-space{
   width: 20px;
-  background-color: rgba(196, 196, 196, 0);
+  background-color: rgba(121, 121, 121, 0.13);
 }
 
 .main-content{
+  margin-top: 0px;
   width: 100%;
-  margin-right: 20px;
-  background-color: rgba(255, 192, 203, 0);
+  margin-right: 0px;
+  background-color: rgba(121, 121, 121, 0.13);
 }
 
 
