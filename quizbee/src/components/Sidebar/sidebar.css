@@ -1,6 +1,73 @@
+
+
+
 .main{
-    background-color: rgb(253, 253, 253);
     width: 30vh;
-    height: 87vh;
     margin-left: 20px;
+    font-family: "Arial";
+    font-size: smaller;
+    background-color: red;
+}
+
+.parent-sidebar{
+    font-family: 'Poppins';
+    font-size: xx-small;
+    font-weight: 10;
+    width: 200px;
+    background-color: rgba(65, 105, 225, 0);
+}
+
+.main-ul{   
+     
+    background-color: rgba(18, 167, 167, 0.842);
+}
+
+.main-ul li{
+    background-color: rgba(137, 43, 226, 0);
+}
+
+/* .btn{
+    border: none;
+} */
+
+.abhay{
+    background-color: rgba(255, 0, 0, 0);
+    margin-left: 30px;
+    margin: auto;
+    line-height: 45px;
+}
+
+.icon{
+    margin-left: 20px;
+}
+
+.abhay:focus-within{
+    
+    border-top-left-radius:20px ;
+    border-bottom-left-radius:20px ;
+    background-color:rgba(121, 121, 121, 0.13) ;
+    
+}
+
+.btn:focus, .btn:active:focus, .btn.active:focus{
+    box-shadow: none !important;
+}
+
+.heading{
+    margin : auto;
+    font-family: 'Poppins', monospace;
+    font-weight:  lighter;
+    font-size: small;
+    color: rgba(39, 38, 38, 0.637) ;
+}
+
+.sub-list{
+    padding-left: 2.7rem;
+    margin-top: auto;
+    color: rgba(255, 0, 0, 0);
+    background-color: rgba(211, 123, 123, 0);
+}
+
+.sub-list a:hover{
+    background-color: rgba(116, 122, 122, 0.116);
 }
