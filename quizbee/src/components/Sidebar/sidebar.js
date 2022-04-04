@@ -5,43 +5,70 @@ import GridIcon from '../../Assets/Icons/grid.png'
 import DashboardTitleItem from '../Sidebar/item'
 
 const Sidebar = props => {
+
+
+function sidebarToggle(){
+  console.log("Clicked on sidebar icon")
+}
+
   return (
     <>
-      <div className="flex-shrink-0 parent-sidebar" >
-        <a href="/" class="d-flex align-items-center pb-3 mb-3 link-dark text-decoration-none border-bottom">
-          <svg class="bi me-2" width="6" height="24"> </svg>
-          <span class="fs-5 fw-semibold">Menus</span>
+      <div className="flex-shrink-0 parent-sidebar" id='sidebarCollapse'>
+        <a className="d-flex align-items-center pb-3 mb-3 link-dark text-decoration-none border-bottom">
+          <svg className="bi me-2" width="6" height="24"> </svg>
+          <div className='menu-icon'>
+          <span className="fs-5 fw-semibold">Menus</span>
+          <img className='sidebar-icon' src="https://img.icons8.com/stickers/100/000000/menu-rounded.png" width={"25 px"} onClick = {sidebarToggle}/>
+          </div>
         </a>
         {/* <ul class="list-unstyled main-ul"> */}
         <DashboardTitleItem
           title={"Dashboard"}
+          id={"id1"}
           img={"https://img.icons8.com/external-gradak-royyan-wijaya/24/000000/external-dashboard-basic-interface-ii-gradak-royyan-wijaya.png"} />
 
         <DashboardTitleItem
           title={"Freelancers"}
-          sublist = {["Item 1", "Item 2"]}
+          sublist={["Overview", "Monthly", "Weekly", "Annually"]}
+          id={"id2"}
           img={"https://img.icons8.com/external-kmg-design-detailed-outline-kmg-design/64/000000/external-layers-design-thinking-kmg-design-detailed-outline-kmg-design.png"} />
 
         <DashboardTitleItem
           title={"Projects"}
+          sublist={["New", "Processed", "Shipped", "Returned"]}
+          id={"id3"}
           img={"https://img.icons8.com/external-vitaliy-gorbachev-lineal-vitaly-gorbachev/60/000000/external-dashboard-blogger-vitaliy-gorbachev-lineal-vitaly-gorbachev.png"} />
 
         <DashboardTitleItem
-          title={"Reports"}
+        title={"Finances"}
+          id={"id4"}
           img={"https://img.icons8.com/ios/50/000000/pie-chart.png"} />
 
         <DashboardTitleItem
           title={"Queries"}
+          id={"id5"}
           img={"https://img.icons8.com/external-tal-revivo-light-tal-revivo/24/000000/external-queries-and-help-for-a-new-user-closeupman-light-tal-revivo.png"} />
 
         <DashboardTitleItem
-          title={"Finances"}
+          
+          title={"Reports"}
+          sublist={["New", "Profile", "Settings", "Sign Out"]}
+          id={"id6"}
           img={"https://img.icons8.com/ios/50/000000/us-dollar-circled--v1.png"} />
 
-        <DashboardTitleItem
+<DashboardTitleItem
           title={"Help"}
+          id={"id7"}
           img={"https://img.icons8.com/ios/50/000000/help.png"} />
-        {/* <li class="mb-1">
+
+
+    
+      
+    
+          
+         
+        {/* 
+        <li class="mb-1">
           <img src="https://img.icons8.com/external-kmg-design-detailed-outline-kmg-design/64/000000/external-layers-design-thinking-kmg-design-detailed-outline-kmg-design.png" width="22px" />
           <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#dashboard-collapse" aria-expanded="false">
             <span className='heading'>Freelancers</span>
@@ -115,8 +142,11 @@ const Sidebar = props => {
       </div>
 
     </>
+    
   )
+  
 }
+
 
 Sidebar.propTypes = {}
 
